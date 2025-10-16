@@ -75,7 +75,15 @@ print("-------------------------------------------\n"
 #     print("Message for other cases")
 
 # Write your code below:
-
+user_num = int(input("Enter a number between 1 and 10\n"))
+if user_num < 1 :
+    print("Number is too low")
+elif user_num > 10:
+    print("Number is too high")
+else:
+    print("The number is in the correct range")
+while user_num < 1 or user_num > 10 :
+    user_num= int(input("try again"))
 
 # -------------------------------------------
 # SWAP COMPUTERS
