@@ -34,7 +34,12 @@ print("-------------------------------------------\n"
 #     print("Hello " + name)  # loop through and greet
 
 # Write your code below:
-
+name1 = input("Enter your first friend name\n")
+name2 = input("Enter your second friend name\n")
+name3 = input("Enter your third friend name\n")
+names = [name1, name2, name3]
+for name in names :
+    print(f"Hello {name}")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -70,7 +75,15 @@ print("-------------------------------------------\n"
 #     print("Message for other cases")
 
 # Write your code below:
-
+user_num = int(input("Enter a number between 1 and 10\n"))
+if user_num < 1 :
+    print("Number is too low")
+elif user_num > 10:
+    print("Number is too high")
+else:
+    print("The number is in the correct range")
+while user_num < 1 or user_num > 10 :
+    user_num= int(input("try again"))
 
 # -------------------------------------------
 # SWAP COMPUTERS
